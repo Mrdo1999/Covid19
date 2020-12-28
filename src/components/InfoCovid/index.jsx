@@ -4,9 +4,12 @@ import axios from "axios";
 import styles from "../../App.module.scss";
 
 const InfoCovid = () => {
+  //state pahum enq containernerum , componentum voch mi funkcia chenq katarum 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  
+  //gaxapary chishta bayc itog eli stex menak nkarum enq, u axiosic chisht zapros anely urish dzeva
   useEffect(() => {
     axios
       .get("https://api.covid19api.com/summary")
@@ -40,6 +43,7 @@ const InfoCovid = () => {
 
   return (
     <section>
+      //loadingd veradarcnuma true kam false , dra poxaren karanq stugenq yete loadingy aktiva tox gri loading u hakaraky
       {loading}
       {renderCovidInfo}
     </section>
