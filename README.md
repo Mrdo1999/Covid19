@@ -1,4 +1,4 @@
-demo:https://covid19-rho-eight.vercel.app/
+demo: https://covid19-rho-eight.vercel.app/
 
 # Getting Started with Create React App
 
